@@ -77,7 +77,6 @@ def view_blockchain_visual():
     canvas.pack(side="left", fill="both", expand=True)
     scrollbar.pack(side="right", fill="y")
 
-# MAIN UI
 root = tk.Tk()
 root.title("Blockchain Game Integrity Dashboard")
 root.geometry("600x600")
