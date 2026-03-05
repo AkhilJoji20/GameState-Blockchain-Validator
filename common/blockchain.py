@@ -49,8 +49,6 @@ class Blockchain:
                 self.chain.append(block)
 
     def add_block(self, game_state):
-
-        # If chain is empty → create genesis block first
         if len(self.chain) == 0:
             genesis = Block(0, game_state, "0")
             self.chain.append(genesis)
@@ -70,4 +68,5 @@ class Blockchain:
                 "game_state": b.game_state,
                 "previous_hash": b.previous_hash,
                 "hash": b.hash
+
             } for b in self.chain], f, indent=4)
